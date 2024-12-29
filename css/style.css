@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Nerko+One&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Nerko+One&display=swap');
+body{
+    background-color: #272B30;
+}
+
+/* ------------------------------header ------------------------- */
+
+header img{
+    max-height: 35vh;
+    object-fit: cover;
+}
+
+/* ---------------------------- navbar -------------------------- */
+nav{
+    background-color: rgb(58, 73, 123) !important;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 0.7);
+    margin-top: -30px;
+    font-family: "Comfortaa", serif;
+}
+.navbar-brand{
+    color: white;
+}
+.navbar-brand:hover {
+    color: white;
+}
+.navbar-brand img{
+    max-width: 40px;
+} 
+.nav-item .nav-link.active,
+.nav-item .nav-link:hover {
+    color: #09c !important;
+    transition: color 0.5s;
+    cursor: pointer;
+}
+
+ul li{
+    font-size: 12px;
+}
+
+/* ---------------------------- card ------------ */
+
+.home .card {
+    filter: grayscale(0.7);
+    transition: transform 0.5s, filter 0.5s 0.1s;
+}
+.home .card:hover {
+    transform: scale(1.05);
+    filter: grayscale(0);
+}
+.badge-color{
+    background-color: #32383E;
+}
+h6{
+    color: white;
+}
+.card-text{
+    color: #939597;
+}
+/* --------------------------------- loader ---------------------- */
+.loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 9999;
+    inset: 0;
+    background-color: #272b30e3;
+}
+
+.loader {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: inline-block;
+    border-top: 4px solid #FFF;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+.loader::after {
+    content: '';  
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border-left: 4px solid #FF3D00;
+    border-bottom: 4px solid transparent;
+    animation: rotation 0.5s linear infinite reverse;
+}
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+} 
+
+/* -------------------------- details ------------------------- */
+
+.details{
+    color: white;
+}
+
+.btn{
+    color: white;
+}
+.btn:hover{
+    color: white;
+}
